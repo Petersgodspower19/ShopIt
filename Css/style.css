@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+body{
+    color: black;
+    min-height: 100vh;
+}
+.sideBar{
+    height:100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #4d869c;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 30px;
+}
+.sideBar img{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    margin-bottom: 4rem;
+    cursor: pointer;
+    width: 30px;
+
+}
+.sideBar ul{
+    list-style-type: none;
+    margin-top: 4rem;
+    
+}
+.sideBar li{
+    margin-bottom: 0.8rem;
+}
+.sideBar a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.sideBar button, header button{
+    width: 100px;
+    border: none;
+    color: black;
+    text-transform: uppercase;
+   border-radius: 4px;
+   height: 30px;
+   background-color: #cde8ef;
+   font-weight: 700;
+   cursor: pointer;
+}
+.sideBar button a, header button a{
+   color: black;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4d869c;
+    color: white;
+    padding: 0.8rem 2rem;
+    
+}
+#logo{
+    font-size: 2rem;
+    cursor: pointer;
+}
+header span{
+    color: #cde8ef;
+}
+.header-links{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+header select, .sideBar select{
+    background-color: #4d869c;
+    color: white;
+    padding: 5px;
+    text-transform: uppercase;
+    border:  none;
+    cursor: pointer;
+    font-weight: 700;
+}
+header select option, .sideBar select option{
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 15px;
+    border-radius: 18px;
+    cursor: pointer;
+}
+header a{
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+header a:hover{
+    color: #cde8ef;
+    text-decoration: underline;
+    z-index: 999;
+}
+#menu{
+    display: none;
+    cursor: pointer;
+}
+.first-section{
+    background-color: #7AB2B2;
+    padding: 5rem 5rem;
+}
+.first-section p{
+    width: 200px;
+    font-size: 1.5rem;
+    color: rgb(65, 62, 62);
+}
+#spring{
+    font-size: 4rem;
+    color: white;
+    font-weight: 700;
+}
+#collec{
+    font-size: 3rem;
+}
+.second-section{
+    background-color: white;
+    margin: auto;
+    padding:2rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+#plane, #support{
+    background-color:#7AB2B2;
+    color: white;
+}
+#clock{
+    background-color: white;
+    color:black ;
+    border-top: 1px solid black;
+}
+.second-section img{
+    width:15%;
+}
+.second-section div{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 15px;
+    height: 100px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px grey;
+}
+.second-section h4{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+.second-section p{
+   font-size: 1rem;
+}
+.grid-section{
+    background-color: white;
+    margin-top: 2rem;
+    padding:2rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid-section div{
+    background-color: white;
+    padding: 5px;
+    margin-bottom: 1rem;
+}
+.grid-section div p{
+    font-size: 15px;
+}
+.pricebtn{
+    border: none;
+    background-color: #4d869c;
+    color: white;
+    font-weight: 700;
+    padding: 5px;
+    border-radius: 5px;
+}
+.grid-section div img{
+    mix-blend-mode: multiply;
+    width: 100px;
+    height: 100px;
+}
+.grid-section .price{
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.old-price{
+    text-decoration: line-through;
+}
+.grid-section div article{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 0.5rem;
+}
+.off{
+    background-color: #4d869c;
+    width: fit-content;
+    margin-bottom: 1rem;
+    padding: 4px;
+    border-radius: 50%;
+    color:white;
+}
+.third-section{
+    background-color: white;
+    margin: auto;
+    padding:2rem 10rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 5px;
+}
+.third-section p{
+    cursor: pointer;
+}
+.third-section a{
+    color: black;
+    text-decoration: none;
+}
+.third-section p:hover, .third-section a:hover{
+    text-decoration: underline;
+    z-index: 999;
+}
+.third-section h4{
+    margin-bottom: 0.5rem;
+}
+footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4d869c;
+    color: white;
+    padding: 0.8rem 2rem;
+}
+footer form{
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 5px;
+}
+footer form input{
+    padding: 3px;
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+}
+footer form input.error{
+    border: 2px solid red;
+}
+#errors{
+    color: red;
+    display: none;
+}
+footer form  button{
+    width: 100px;
+    border: none;
+    text-transform: uppercase;
+   border-radius: 4px;
+   height: 30px;
+   background-color: #cde8ef;
+   font-weight: 700;
+   cursor: pointer;
+}
+footer .socials{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+footer .socials img{
+    width: 30px;
+    border: 2px solid #7AB2B2;
+    border-radius: 50%;
+    padding: 5px;
+}
+@media(max-width:870px){
+    .second-section{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+}
+}
+
+@media(max-width:600px){
+    .header-links{
+        display: none;
+    }
+    #menu{
+        display: block;
+    }
+    .second-section{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+    .second-section div{
+        margin-bottom: 1.5rem;
+        gap: 10px;
+        width: 100%;
+        padding: 10px;
+        height: 100px;
+    }
+    .grid-section{
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+        text-align: center;
+    }
+    .grid-section div{
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .third-section{
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+        padding: 2rem 4rem;
+    }
+    .third-section div{
+        margin-bottom: 2rem;
+    }
+    footer{
+        flex-direction: column;
+    }
+}
