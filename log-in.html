@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="container">
+        <h4 id="logo">Shop<span>it</span></h4>
+        <form action="">
+      <label for="username">username</label>
+      <article>
+        <input id="username" type="text" placeholder="input your username">
+        <p id="usernameError" class="errors">can not be left empty!</p>
+      </article>
+      <label for="password">Password</label>
+      <article>
+        <input id="userpassword" type="password" placeholder="input your password">
+        <p id="userpasswordError" class="errors">can not be left empty!</p>
+      </article>
+    <button id="form-btn">Log In</button>
+        </form>
+
+        <p class="register">Dont have an account with us? <button id="sign-up" onclick="showRegister()">Sign Up</button></p>
+    </section>
+    <section class="second-container">
+        <h4 id="logo">Shop<span>it</span></h4>
+        <form action="">
+      <label for="email">email</label>
+      <article>
+        <input id="email" type="email" placeholder="input your username">
+        <p id="emailErrors" class="errors">can not be left empty!</p>
+      </article>
+      <label for="password">Password</label>
+      <article>
+        <input id="registerPassword" type="password" placeholder="input your password">
+        <p id="registerPasswordError" class="errors">can not be left empty!</p>
+      </article>
+    <button id="register-btn">Register</button>
+        </form>
+
+        <p class="register">Already have an account with us? <button><a href="log-in.html">Log In</a></button></p>
+    </section>
+    </section>
+
+
+ <script src="./js_files/login.js"></script>   
+</body>
+</html>

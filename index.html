@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <div class="sideBar" id="sideBar">
+    <img src="icon-close.svg" onclick="closeBar()" alt=""/>
+    <div class="sideBar-links">
+        <ul>
+          <li><a href="#">Gallery</a></li>
+            <li><a href="index.html">My Account</a></li>
+            <li><a href="#">Contact</a></li>
+            <li>
+              <select name="Categories" class="Categories" id="sidebar-dropDown">
+                <option value="#">Categories</option>
+                <option value="men">Men</option>
+                <option value="women">Women</option>
+                <option value="kids">Kids</option>
+              </select>
+            </li>
+            <li><a href="#">Faqs</a></li>
+        </ul>
+    </div>
+    <button><a href="log-in.html">Log In</a></button>
+  </div>
+  <header>
+    <h4 id="logo">Shop<span>it</span></h4>
+    <div class="header-links">
+      <a href="#">Gallery</a>
+      <a href="log-in.html">My Account</a>
+      <a href="#">Contact</a>
+      <select name="Categories" id="Categories">
+        <option value="#">Categories</option>
+        <option value="men">Men</option>
+        <option value="women">Women</option>
+        <option value="kids">Kids</option>
+      </select>
+      <a href="#">Faqs</a>
+      <button><a href="log-in.html">Log In</a></button>
+    </div>
+    <img id="menu" src="icon-hamburger.svg" alt="" onclick="openBar()"/>
+  </header>
+  <section class="first-section">
+    <p><span id="spring">Spring</span> <span id="collec">Collections</span> Available Now</p>
+  </section>
+  <section class="second-section">
+    <div id="plane">
+      <img src="airplane.png" alt="">
+      <article>
+        <h4>Free Shipping</h4>
+        <p>min:$200</p>
+      </article>
+    </div>
+    <div id="clock">
+      <img src="clock.png" alt="">
+      <article>
+        <h4>30-days return</h4>
+        <p>min:$200</p>
+      </article>
+    </div>
+    <div id="support">
+      <img src="24-7.png" alt="">
+      <article>
+        <h4>24/7 support</h4>
+        <p>min:$200</p>
+      </article>
+    </div>
+  </section>
+  <section class="grid-section" id="grid-section">
+    <div>
+      <article>
+        <p class="off">-20%</p> 
+        <img src="Handbag-for-Ladies.jpg.webp" alt=""/>
+      </article>
+      <p>Lorem ipsum dolor sit amet, consectetur.</p>
+      <article class="price">
+        <p><button class="pricebtn">&euro; 960</button></p>
+        <p class="old-price">&euro; 1200</p>
+      </article>
+    </div>
+    <div>
+      <article>
+        <p class="off">-20%</p> 
+        <img src="woman-shoe.jpg" alt=""/></article>
+      <p>Lorem ipsum dolor sit amet, consectetur.</p>
+      <article class="price">
+        <p><button class="pricebtn">&euro; 960</button></p>
+        <p class="old-price">&euro; 1200</p>
+      </article>
+    </div>
+    <div>
+      <article>
+        <p class="off">-20%</p> 
+        <img src="Handbag-for-Ladies.jpg.webp" alt=""/></article>
+      <p>Lorem ipsum dolor sit amet, consectetur.</p>
+      <article class="price">
+        <p><button class="pricebtn">&euro; 960</button></p>
+        <p class="old-price">&euro; 1200</p>
+      </article>
+    </div>
+    <div>
+      <article>
+        <p class="off">-20%</p> 
+        <img src="shirt-home.jpg" alt=""/></article>
+      <p>Lorem ipsum dolor sit amet, consectetur.</p>
+      <article class="price">
+        <p><button class="pricebtn">&euro; 960</button></p>
+        <p class="old-price">&euro; 1200</p>
+      </article>
+    </div>
+    <div>
+      <article>
+        <p class="off">-20%</p> 
+        <img src="watch-home.jpg" alt=""/></article>
+      <p>Lorem ipsum dolor sit amet, consectetur.</p>
+      <article class="price">
+        <p><button class="pricebtn">&euro; 960</button></p>
+        <p class="old-price">&euro; 1200</p>
+      </article>
+    </div>
+    <div>
+      <article>
+        <p class="off">-20%</p> 
+        <img src="aF1-home.jpeg" alt=""/></article>
+      <p>Lorem ipsum dolor sit amet, consectetur.</p>
+      <article class="price">
+        <p><button class="pricebtn">&euro; 960</button></p>
+        <p class="old-price">&euro; 1200</p>
+      </article>
+    </div>
+  </section>
+  <section class="third-section">
+    <div>
+      <h4>Categories</h4>
+      <p><a href="#">men</a></p>
+      <p><a href="#">women</a></p>
+      <p><a href="#">kids</a></p>
+      <p><a href="#">fashion</a></p>
+      <p><a href="#">household</a></p>
+    </div>
+    <div>
+      <h4>About Us</h4>
+      <p onclick="ourAddress()">Our Address</p>
+      <p onclick="contact()">Contact Info</p>
+    </div>
+    <div>
+      <h4>Personal Info</h4>
+      <p><a href="#">Gallery</a></p>
+      <p><a href="#">My Account</a></p>
+      <p><a href="#">Faqs</a></p>
+    </div>
+  </section>
+  <footer>
+    <form>
+      <article>
+        <input type="email" id="email" placeholder="subscribe to get news about new deals"/>
+        <p id="errors">Input a valid email</p>
+      </article>
+      <button id="form-btn">Subscribe</button>
+    </form>
+    <section class="socials">
+      <img src="facebook-app-symbol.png" alt="">
+      <img src="instagram.png" alt="">
+      <img src="social.png" alt="">
+    </section>
+  </footer>
+  <script type="module" src="./js_files/index.js"></script>
+</body>
+</html>
