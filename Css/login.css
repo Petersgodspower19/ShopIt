@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+body{
+    background-color: #4d869c;
+}
+.container, .second-container{
+    padding: 2rem;
+    background-color: white;
+    width: 300px;
+    margin: 6rem auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px grey;
+}
+h4{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color:#4d869c;
+    font-weight: 800;
+}
+h4 span{
+    color: #7AB2B2;
+}
+form{
+    margin-bottom: 2rem;
+}
+label{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+form input{
+    margin-top: 0.4rem;
+    height: 30px;
+    border-radius: 4px;
+    padding: 5px;
+    width: 100%;
+}
+form input.error{
+    border: 3px solid #4d869c;
+}
+.errors{
+    font-weight: 800;
+   color: #4d869c;
+   display: none;
+} 
+form article{
+   margin-bottom: 1rem; 
+}
+form button{
+    background-color: #7AB2B2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    padding: 4px;
+    width: 100px;
+}
+.register{
+    font-size: 15px;
+}
+.register button{
+    background-color: inherit;
+    color: #4d869c;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.second-container{
+    display: none;
+}
