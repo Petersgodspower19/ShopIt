@@ -134,7 +134,9 @@ header a:hover{
     padding:2rem 5rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 #plane, #support{
     background-color:#7AB2B2;
@@ -168,14 +170,18 @@ header a:hover{
 .grid-section{
     background-color: white;
     margin-top: 2rem;
-    padding:2rem 3rem;
+    padding:1.5rem 3.5rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 0.9rem;
 }
 .grid-section div{
     background-color: white;
-    padding: 5px;
+    padding: 1rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
+    box-shadow: 2px 2px 2px 2px grey;
 }
 .grid-section div p{
     font-size: 15px;
@@ -233,6 +239,7 @@ header a:hover{
 .third-section a{
     color: black;
     text-decoration: none;
+    text-transform: uppercase;
 }
 .third-section p:hover, .third-section a:hover{
     text-decoration: underline;
@@ -240,6 +247,12 @@ header a:hover{
 }
 .third-section h4{
     margin-bottom: 0.5rem;
+}
+.third-section button{
+    background-color: inherit;
+    border: none;
+    text-transform: uppercase;
+    font-size: inherit;
 }
 footer{
     width: 100%;
@@ -289,11 +302,34 @@ footer .socials img{
     border-radius: 50%;
     padding: 5px;
 }
+
+
 @media(max-width:870px){
     .second-section{
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
 }
+}
+@media(max-width:700px) {
+    .grid-section{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media(max-width:600px) {
+    .grid-section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width:350px) {
+    .grid-section{
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+        text-align: center;
+    }
+    .grid-section div{
+        margin-bottom: 2rem;
+        text-align: center;
+    }
 }
 
 @media(max-width:600px){
@@ -314,15 +350,7 @@ footer .socials img{
         padding: 10px;
         height: 100px;
     }
-    .grid-section{
-        grid-template-columns: repeat(1, 1fr);
-        margin: auto;
-        text-align: center;
-    }
-    .grid-section div{
-        margin-bottom: 2rem;
-        text-align: center;
-    }
+    
     .third-section{
         grid-template-columns: repeat(2, 1fr);
         margin: auto;
