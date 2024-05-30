@@ -8,6 +8,8 @@
 body{
     color: black;
     min-height: 100vh;
+    min-width: 100vw;
+    overflow-x: hidden;
 }
 .sideBar{
     height:100%;
@@ -113,6 +115,7 @@ header a:hover{
 }
 .first-section{
     background-color: #7AB2B2;
+    width: 100%;
     padding: 5rem 5rem;
 }
 .first-section p{
@@ -129,28 +132,22 @@ header a:hover{
     font-size: 3rem;
 }
 .second-section{
+    width: 100%;
     background-color: white;
     margin: auto;
     padding:2rem 5rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-#plane, #support{
-    background-color:#7AB2B2;
-    color: white;
-}
-#clock{
-    background-color: white;
-    color:black ;
-    border-top: 1px solid black;
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
 }
 .second-section img{
     width:15%;
 }
 .second-section div{
+    background-color:#7AB2B2;
+    color: white;
     width: 250px;
     display: flex;
     align-items: center;
@@ -172,16 +169,28 @@ header a:hover{
     margin-top: 2rem;
     padding:1.5rem 3.5rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     gap: 0.9rem;
+    animation: light 3s both;
 }
+
+@keyframes light{
+   0%{opacity: 0; }
+   100%{opacity: 1; }
+}
+.animate{
+    animation: light 3s both;
+}
+
+
 .grid-section div{
     background-color: white;
     padding: 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
     box-shadow: 2px 2px 2px 2px grey;
+    animation: light 3s both;
 }
 .grid-section div p{
     font-size: 15px;
@@ -234,7 +243,9 @@ header a:hover{
     gap: 5px;
 }
 .third-section p{
+    text-transform: uppercase;
     cursor: pointer;
+    font-size: 13px;
 }
 .third-section a{
     color: black;
@@ -248,12 +259,7 @@ header a:hover{
 .third-section h4{
     margin-bottom: 0.5rem;
 }
-.third-section button{
-    background-color: inherit;
-    border: none;
-    text-transform: uppercase;
-    font-size: inherit;
-}
+
 footer{
     width: 100%;
     display: flex;
@@ -310,9 +316,23 @@ footer .socials img{
         gap: 1rem;
 }
 }
+@media(max-width:830px){
+  .grid-section{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media(max-width:700px) {
     .grid-section{
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media(max-width:680px) {
+    .header-links{
+        display: none;
+    }
+    #menu{
+        display: block;
     }
 }
 @media(max-width:600px) {
@@ -333,23 +353,6 @@ footer .socials img{
 }
 
 @media(max-width:600px){
-    .header-links{
-        display: none;
-    }
-    #menu{
-        display: block;
-    }
-    .second-section{
-        grid-template-columns: repeat(1, 1fr);
-        gap: 1rem;
-    }
-    .second-section div{
-        margin-bottom: 1.5rem;
-        gap: 10px;
-        width: 100%;
-        padding: 10px;
-        height: 100px;
-    }
     
     .third-section{
         grid-template-columns: repeat(2, 1fr);
@@ -362,4 +365,33 @@ footer .socials img{
     footer{
         flex-direction: column;
     }
+    footer form {
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:400px){
+    .grid-section{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+@media(max-width:300px){
+   .first-section{
+    text-align: center;
+   }
+   .first-section p{
+    width: 100%;
+   }
+   #spring{
+    font-size: 3rem;
+    color: white;
+    font-weight: 700;
+}
+#collec{
+    font-size: 1.5rem;
+}
+.second-section div{
+    width: 100%;
+}
 }
