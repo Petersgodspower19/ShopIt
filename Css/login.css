@@ -14,6 +14,12 @@ body{
     margin: 6rem auto;
     border-radius: 5px;
     box-shadow: 2px 2px 2px grey;
+    animation: light 2s both;
+}
+
+@keyframes light{
+   0%{opacity: 0; }
+   100%{opacity: 1; }
 }
 h4{
     font-size: 2rem;
