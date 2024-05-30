@@ -68,8 +68,8 @@ header{
     justify-content: space-between;
     background-color: #4d869c;
     color: white;
-    padding: 0.8rem 2rem;
-    
+    padding: 1rem 2rem;
+    z-index: 1;
 }
 #logo{
     font-size: 2rem;
@@ -169,7 +169,7 @@ header a:hover{
     margin-top: 2rem;
     padding:1.5rem 3.5rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     gap: 0.9rem;
     animation: light 3s both;
