@@ -54,10 +54,27 @@ document.addEventListener('DOMContentLoaded', (event) => {
         </article>
       </div>`;
     }).join("");
+    productCards.classList.add("animate");
   };
 
   headerDropDown.addEventListener("change", (e) => {
     productCards.innerHTML = "";
+    productCards.classList.add("animate");
+    switch (e.target.value) {
+      case "men":
+        itemCards(homeProducts.filter(item => item.Isfor === "men"));
+        break;
+      case "women":
+        itemCards(homeProducts.filter(item => item.Isfor === "women"));
+        break;
+      default:
+        itemCards(homeProducts);
+        break;
+    }
+  });
+  sidebarDropDown.addEventListener("change", (e) => {
+    productCards.innerHTML = "";
+    productCards.classList.add("animate");
     switch (e.target.value) {
       case "men":
         itemCards(homeProducts.filter(item => item.Isfor === "men"));
@@ -71,20 +88,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
   });
 
-  sidebarDropDown.addEventListener("change", (e) => {
-    productCards.innerHTML = "";
-    switch (e.target.value) {
-      case "men":
-        itemCards(homeProducts.filter(item => item.Isfor === "men"));
-        break;
-      case "women":
-        itemCards(homeProducts.filter(item => item.Isfor === "women"));
-        break;
-      default:
-        itemCards(homeProducts);
-        break;
-    }
+
+  const contactUs = () => {
+    Swal.fire({
+    icon: "error",
+    title: "Our Contact",
+    text: 'You can contact us either by calling +77456673778',
+    footer: '<a href="contact.html">For more details check our our contact page</a>'
   });
+}
+    
+  
 
   let formBtn = document.getElementById("form-btn");
   let emailValue = document.getElementById("email");
@@ -115,4 +129,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
   window.openBar = openBar;
   window.closeBar = closeBar;
   window.priceFunction = priceFunction;
+  window.contactUs = contactUs;
+  window.sidebarDropDown = sidebarDropDown;
 });
