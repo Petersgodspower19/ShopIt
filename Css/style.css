@@ -24,13 +24,12 @@ body{
     padding-top: 30px;
 }
 .sideBar img{
+    width: 30px;
     position: absolute;
     top: 15px;
     right: 15px;
     margin-bottom: 4rem;
     cursor: pointer;
-    width: 30px;
-
 }
 .sideBar ul{
     list-style-type: none;
