@@ -9,11 +9,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   const openBar = () => {
     document.getElementById("sideBar").style.width = "200px";
+    document.getElementById("header").style.zIndex = "0";
     document.getElementById("sideBar").style.padding = "2rem 2rem";
   };
 
   const closeBar = () => {
     document.getElementById("sideBar").style.width = "0";
+    document.getElementById("header").style.zIndex = "1";
     document.getElementById("sideBar").style.padding = "0";
   };
 
