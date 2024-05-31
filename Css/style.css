@@ -285,6 +285,7 @@ footer form input.error{
 #errors{
     color: red;
     display: none;
+    animation: light 2s both;
 }
 footer form  button{
     width: 100px;
