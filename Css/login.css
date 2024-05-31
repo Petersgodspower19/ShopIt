@@ -52,6 +52,7 @@ form input.error{
     font-weight: 800;
    color: #4d869c;
    display: none;
+    animation: light 2s both;
 } 
 form article{
    margin-bottom: 1rem; 
