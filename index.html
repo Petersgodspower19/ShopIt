@@ -48,6 +48,24 @@
     </div>
     <img id="menu" src="icon-hamburger.svg" alt="" onclick="openBar()"/>
   </header>
+  <div class="cart-details">
+    <p class="cart-new" id="cart-new">!</p>
+    <img id="cart-btn" src="./cart.png" alt=""/>
+</div>
+<div class="cart-container" id="cart-container">
+    <div id="products-container"></div>
+    <p style="margin-top: 3rem;">Total number of items: <span id="total-items">0</span></p>
+    <p>Subtotal: <span id="subtotal">$0</span></p>
+    <p>Taxes: <span id="taxes">$0</span></p>
+    <p>Total: <span id="total">$0</span></p>
+    <article>
+        <button class="btn" id="clear-cart-btn">Clear Cart</button>
+    <button id="show-and-hide" onclick="hide()"><span id="show-and-hide">Show</span> Cart</button>
+    </article>
+</div>
+
+
+
   <section class="first-section">
     <p><span id="spring">Spring</span> <span id="collec">Collections</span> Available Now</p>
   </section>
@@ -82,9 +100,9 @@
       </article>
       <p>Lorem ipsum dolor sit amet, consectetur.</p>
       <article class="price">
-        <p><button class="pricebtn">&euro; 960</button></p>
-        <p class="old-price">&euro; 1200</p>
-      </article>
+        <p><button class="pricebtn" data-id="${id}">${newprice}</button></p>
+        <p class="old-price">${oldprice}</p>
+    </article>    
     </div>
     <div>
       <article>
@@ -92,9 +110,9 @@
         <img src="woman-shoe.jpg" alt=""/></article>
       <p>Lorem ipsum dolor sit amet, consectetur.</p>
       <article class="price">
-        <p><button class="pricebtn">&euro; 960</button></p>
-        <p class="old-price">&euro; 1200</p>
-      </article>
+        <p><button class="pricebtn" data-id="${id}">${newprice}</button></p>
+        <p class="old-price">${oldprice}</p>
+    </article>    
     </div>
     <div>
       <article>
@@ -102,9 +120,9 @@
         <img src="woman-shoe.jpg" alt=""/></article>
       <p>Lorem ipsum dolor sit amet, consectetur.</p>
       <article class="price">
-        <p><button class="pricebtn">&euro; 960</button></p>
-        <p class="old-price">&euro; 1200</p>
-      </article>
+        <p><button class="pricebtn" data-id="${id}">${newprice}</button></p>
+        <p class="old-price">${oldprice}</p>
+    </article>    
     </div>
     <div>
       <article>
@@ -112,9 +130,9 @@
         <img src="woman-shoe.jpg" alt=""/></article>
       <p>Lorem ipsum dolor sit amet, consectetur.</p>
       <article class="price">
-        <p><button class="pricebtn">&euro; 960</button></p>
-        <p class="old-price">&euro; 1200</p>
-      </article>
+        <p><button class="pricebtn" data-id="${id}">${newprice}</button></p>
+        <p class="old-price">${oldprice}</p>
+    </article>    
     </div>
     <div>
       <article>
@@ -122,9 +140,9 @@
         <img src="Handbag-for-Ladies.jpg.webp" alt=""/></article>
       <p>Lorem ipsum dolor sit amet, consectetur.</p>
       <article class="price">
-        <p><button class="pricebtn">&euro; 960</button></p>
-        <p class="old-price">&euro; 1200</p>
-      </article>
+        <p><button class="pricebtn" data-id="${id}">${newprice}</button></p>
+        <p class="old-price">${oldprice}</p>
+    </article>    
     </div>
     <div>
       <article>
@@ -132,9 +150,9 @@
         <img src="shirt-home.jpg" alt=""/></article>
       <p>Lorem ipsum dolor sit amet, consectetur.</p>
       <article class="price">
-        <p><button class="pricebtn">&euro; 960</button></p>
-        <p class="old-price">&euro; 1200</p>
-      </article>
+        <p><button class="pricebtn" data-id="${id}">${newprice}</button></p>
+        <p class="old-price">${oldprice}</p>
+    </article>    
     </div>
     <div>
       <article>
@@ -142,9 +160,9 @@
         <img src="shirt-home.jpg" alt=""/></article>
       <p>Lorem ipsum dolor sit amet, consectetur.</p>
       <article class="price">
-        <p><button class="pricebtn">&euro; 960</button></p>
-        <p class="old-price">&euro; 1200</p>
-      </article>
+        <p><button class="pricebtn" data-id="${id}">${newprice}</button></p>
+        <p class="old-price">${oldprice}</p>
+    </article>    
     </div>
     <div>
       <article>
@@ -152,9 +170,9 @@
         <img src="shirt-home.jpg" alt=""/></article>
       <p>Lorem ipsum dolor sit amet, consectetur.</p>
       <article class="price">
-        <p><button class="pricebtn">&euro; 960</button></p>
-        <p class="old-price">&euro; 1200</p>
-      </article>
+        <p><button class="pricebtn" data-id="${id}">${newprice}</button></p>
+        <p class="old-price">${oldprice}</p>
+    </article>    
     </div>
     <div>
       <article>
@@ -162,9 +180,9 @@
         <img src="watch-home.jpg" alt=""/></article>
       <p>Lorem ipsum dolor sit amet, consectetur.</p>
       <article class="price">
-        <p><button class="pricebtn">&euro; 960</button></p>
-        <p class="old-price">&euro; 1200</p>
-      </article>
+        <p><button class="pricebtn" data-id="${id}">${newprice}</button></p>
+        <p class="old-price">${oldprice}</p>
+    </article>    
     </div>
     <div>
       <article>
@@ -172,9 +190,9 @@
         <img src="watch-home.jpg" alt=""/></article>
       <p>Lorem ipsum dolor sit amet, consectetur.</p>
       <article class="price">
-        <p><button class="pricebtn">&euro; 960</button></p>
-        <p class="old-price">&euro; 1200</p>
-      </article>
+        <p><button class="pricebtn" data-id="${id}">${newprice}</button></p>
+        <p class="old-price">${oldprice}</p>
+    </article>    
     </div>
     <div>
       <article>
@@ -182,9 +200,9 @@
         <img src="watch-home.jpg" alt=""/></article>
       <p>Lorem ipsum dolor sit amet, consectetur.</p>
       <article class="price">
-        <p><button class="pricebtn">&euro; 960</button></p>
-        <p class="old-price">&euro; 1200</p>
-      </article>
+        <p><button class="pricebtn" data-id="${id}">${newprice}</button></p>
+        <p class="old-price">${oldprice}</p>
+    </article>    
     </div>
     <div>
       <article>
@@ -192,9 +210,9 @@
         <img src="aF1-home.jpeg" alt=""/></article>
       <p>Lorem ipsum dolor sit amet, consectetur.</p>
       <article class="price">
-        <p><button class="pricebtn">&euro; 960</button></p>
-        <p class="old-price">&euro; 1200</p>
-      </article>
+        <p><button class="pricebtn" data-id="${id}">${newprice}</button></p>
+        <p class="old-price">${oldprice}</p>
+    </article>    
     </div>
   </section>
   <section class="third-section">
@@ -215,6 +233,7 @@
       <p><a href="#">Faqs</a></p>
     </div>
   </section>
+  
   <footer>
     <form>
       <article>
