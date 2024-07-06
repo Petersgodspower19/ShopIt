@@ -7,7 +7,7 @@
 
 body{
     color: black;
-    min-height: 100vh;
+    min-height: 100%;
     min-width: 100vw;
     overflow-x: hidden;
 }
@@ -44,7 +44,7 @@ body{
     color: white;
     text-transform: uppercase;
 }
-.sideBar button, header button{
+.sideBar button, header button, #show-and-hide, #clear-cart-btn{
     width: 100px;
     border: none;
     color: black;
@@ -112,6 +112,78 @@ header a:hover{
     display: none;
     cursor: pointer;
 }
+
+.cart-details {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.cart-new {
+    background-color: #f44336;
+    width: 20px;
+    height: 20px;
+    color: white;
+    font-weight: 1000;
+    font-size: 14px;
+    border-radius: 50%;
+    display: none;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -10px; 
+    right: -10px;*/
+}
+
+#cart-btn {
+    width: 55px;
+    border-radius: 50%;
+    padding: 8px;
+    background-color: #4d869c;
+    cursor: pointer;
+}
+
+#cart-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #4d869c;
+    color: white;
+    width: 300px;
+    height: fit-content;
+    border-radius: 15px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    text-align: start;
+    font-size: 1.2rem;
+    overflow-y: scroll;
+    padding: 1rem 2rem;
+    z-index: 1;
+    animation: light 1s both;
+}
+
+#cart-container article {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+}
+
+#clear-cart-btn {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.products-container {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 .first-section{
     background-color: #7AB2B2;
     width: 100%;
@@ -281,6 +353,7 @@ footer form input{
 }
 footer form input.error{
     border: 2px solid red;
+    
 }
 #errors{
     color: red;
